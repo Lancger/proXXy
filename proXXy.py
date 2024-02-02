@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.8
 # Built by Solanaceae -- https://solanaceae.xyz/
 import hrequests
 from sys import argv
