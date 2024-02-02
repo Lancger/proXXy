@@ -436,7 +436,7 @@ def scraping_handler(error_log, site, timeout):
         non_check_closure()
 
 def non_check_closure():
-    with (open("scraped/HTTP.txt", "r") as file_http, open("scraped/HTTPS.txt", "r") as file_https, open("scraped/SOCKS4.txt", "r") as file_socks4, open("scraped/SOCKS5.txt", "r") as file_socks5):
+    with open("scraped/HTTP.txt", "r") as file_http, open("scraped/HTTPS.txt", "r") as file_https, open("scraped/SOCKS4.txt", "r") as file_socks4, open("scraped/SOCKS5.txt", "r") as file_socks5:
         http_scraped = len(file_http.readlines())
         https_scraped = len(file_https.readlines())
         socks4_scraped = len(file_socks4.readlines())
@@ -463,7 +463,7 @@ def non_check_closure():
     
 def prox_check_handler(protocols, site, timeout):
     global http_scraped, https_scraped, socks4_scraped, socks5_scraped
-    with (open("scraped/HTTP.txt", "r") as file_http, open("scraped/HTTPS.txt", "r") as file_https, open("scraped/SOCKS4.txt", "r") as file_socks4, open("scraped/SOCKS5.txt", "r") as file_socks5):
+    with open("scraped/HTTP.txt", "r") as file_http, open("scraped/HTTPS.txt", "r") as file_https, open("scraped/SOCKS4.txt", "r") as file_socks4, open("scraped/SOCKS5.txt", "r") as file_socks5:
         http_scraped = len(file_http.readlines())
         https_scraped = len(file_https.readlines())
         socks4_scraped = len(file_socks4.readlines())
