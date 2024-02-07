@@ -139,6 +139,7 @@ def parameters():
     global timeout
     global prox_check
     global user_agents
+    threads = None  # 添加这行代码
 
     try:
         banner()
